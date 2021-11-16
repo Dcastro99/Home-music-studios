@@ -28,7 +28,7 @@ function hourOfDay(){
     return greeting;
 }
 function sayHello(){
-    let answer = prompt("how many albums does U2 have?");
+    let answer = prompt("how many albums has the band U2 written?");
     if(answer == 14){
         alert("you are right!")
     } else{
