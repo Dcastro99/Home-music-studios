@@ -1,36 +1,50 @@
 'use strict'
 
-//declare a variable
 
-
-let userName = prompt("What is your name?");
-let currentHour = prompt("What is the current hour of the day (1-24)");
-let greeting = "";
-
-if(currentHour >= 17 && currentHour <= 24){
-    greeting = "Good Evening";
-} else if(currentHour >= 12 && currentHour <= 16){
-    greeting = "Good Afternoon";
-}else if(currentHour > 0) {
-    greeting = "Good Morning";
-}else {
-    greeting = "You are not Welcome";
+function createGreeting(){
+    let userName = getUserName();
+    let greeting = hourOfDay();
+    document.write(greeting + ', ' + userName + "!");
 }
 
-console.log(userName);
-
-confirm("Enter at your owen risk!")
-
-if(userName.toLowerCase() === "danny"){
-    alert("Hi Danny!");
-} 
-
-
-
-else if(userName.toLowerCase){
-    alert("hi "+ userName)
+function getUserName(){
+    let UserName = prompt("what's your name?");
+    return UserName;
 }
-else{
-    alert("I don't recognize your name");
+
+function hourOfDay(){
+    let currentHour = prompt("What is the current hour of the day (1-24)");
+    let greeting = "";
+    if(currentHour >= 17 && currentHour <= 24){
+        greeting = "Good Evening"; 
+    } else if(currentHour >= 12 && currentHour <= 16){
+        greeting = "Good Afternoon";
+    } else if(currentHour > 0 ) {
+        greeting = "Good Morning";
+    }else {
+        greeting = "Welcome";
+    }
+
+    return greeting;
 }
-document.write(greeting + ',' + userName.toUpperCase() + "!");
+function sayHello(){
+    let answer = prompt("how many albums does U2 have?");
+    if(answer == 14){
+        alert("you are right!")
+    } else{
+        alert("You are wrong, they have 14");
+    }
+    console.log("Hello");
+
+}
+
+    function openText(){
+        let number = 1;
+        if(number === 1){
+            document.write("hello, this is some pretty cool text");
+        } else if(number === 3) {
+        }
+    }
+
+    alert("Music rules!");
+    sayHello(); 
