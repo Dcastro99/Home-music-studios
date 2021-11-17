@@ -56,7 +56,7 @@ while(answer !=="14")
 function displayRecords(){
     let number = prompt("How many records do you want to write?");
     for(let record = 1; record <= number; record++){
-        document.write('<img src="/images/gold record.jpeg"/>')
+        document.write('<img src="images/gold record.jpeg"/>')
     }
 }
 
