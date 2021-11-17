@@ -25,26 +25,33 @@ function hourOfDay(){
         greeting = "Welcome";
     }
 
+
+
+
     return greeting;
 }
-function sayHello(){
-    let answer = prompt("how many albums has the band U2 written?");
-    if(answer == 14){
-        alert("you are right!")
-    } else{
-        alert("You are wrong, they have 14");
-    }
+
+let answer = "";
+do{
+    answer = prompt("How many albums has U2 written (1-20)?");
+}
+while(answer !=="14")
+
+
+
+{
+
+//function sayHello(){
+  //  let answer = prompt("how many albums has the band U2 written?");
+    //if(answer == 14){
+      //  alert("you are right!")
+    //} else{
+       // alert("You are wrong, they have 14");
+   // }
     console.log("Hello");
 
 }
 
-    function openText(){
-        let number = 1;
-        if(number === 1){
-            document.write("hello, this is some pretty cool text");
-        } else if(number === 3) {
-        }
-    }
-
+   
     alert("Music rules!");
     sayHello(); 
