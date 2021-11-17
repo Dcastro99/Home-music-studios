@@ -31,16 +31,38 @@ function hourOfDay(){
     return greeting;
 }
 
+
+
+
+
+
+
 let answer = "";
 do{
     answer = prompt("How many albums has U2 written (1-20)?");
+    
+    if(answer > 14){
+        alert("Try again");
+        alert("You are too high!")
+    } else if(answer < 14){
+        alert("Try again");
+        alert("You are too low!");
+    } else{
+        alert("You are correct!");
+    }
 }
 while(answer !=="14")
 
-
+function displayRecords(){
+    let number = prompt("How many records do you want to write?");
+    for(let record = 1; record <= number; record++){
+        document.write('<img src="/images/gold record.jpeg"/>')
+    }
+}
 
 {
 
+    
 //function sayHello(){
   //  let answer = prompt("how many albums has the band U2 written?");
     //if(answer == 14){
